@@ -1,0 +1,119 @@
+
+<!-- saved from url=(0081)file:///C:/Users/Aluna/OneDrive/eduardojose/Desktop/jamilly/pensamento/index.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>```html
+
+
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Tech</title>
+
+    <style>
+        header {
+            background-color: #c5b672;
+            color: rgba(54, 24, 17, 0.76);
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+            border: 5px solid #a576309c;
+        }
+
+        main {
+            background-color: #654936;
+            color: #E7D8BC;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        main img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        button {
+            margin-right: 8px;
+            padding: 6px 10px;
+            cursor: pointer;
+        }
+    </style>
+
+
+
+
+    <header>
+        <h1>Meu Blog Tech</h1>
+        <p>Vou compartilhar conhecimentos sobre minha série favorita: Outer Banks.</p>
+    </header>
+
+    <main>
+
+        <img src="./index_files/p18121504_b_h8_ae.jpg" alt="Imagem de Outer Banks">
+
+        <h2>Meu primeiro post</h2>
+
+        <p>Por: Jamilly Oliveira Aguiar</p>
+
+        <p>
+            Outer Banks é uma série cheia de aventura, mistério e amizade.
+            A história acompanha os Pogues em suas descobertas e desafios,
+            sempre em busca de novos mistérios.
+        </p>
+
+        <p>
+            Cada episódio traz uma nova surpresa e deixa aquela vontade
+            de descobrir o que vai acontecer. 🌊☀️
+        </p>
+
+        <button>❤️ <span>0</span></button>
+        <button>👍 <span>0</span></button>
+
+        <img src="./index_files/OBX3-Netflix.jpeg_">
+        <h2>Meu segundo post</h2>
+
+        <p>Por: Jamilly Oliveira Aguiar</p>
+
+        <p>
+           Mistérios, tesouros e amizades que tornam cada episódio inesquecível.
+        </p>
+
+        <p>
+           Mais que uma série: uma aventura que faz você querer viver cada descoberta junto com os Pogues.
+        </p>
+        <button>❤️ <span>0</span></button>
+        <button>👍 <span>0</span></button>
+
+    </main>
+
+    <script>
+        const botoes = document.querySelectorAll("button");
+
+        botoes.forEach(function (botao) {
+
+            let curtiu = false;
+
+            botao.addEventListener("click", botaoClicado);
+
+            function botaoClicado() {
+                const texto = botao.querySelector("span");
+
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            }
+        });
+    </script>
+
+
+
+
+```
+</body></html>
